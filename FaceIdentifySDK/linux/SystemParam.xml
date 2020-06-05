@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="gb2312" ?>
+<Message Version="1.0">
+ <FaceAnalysis>
+	<!--人脸尺寸-->
+    <FaceMinSize>30</FaceMinSize>
+    <FaceMaxSize>400</FaceMaxSize>
+	<!-- 图像按缩放比例变化后再做人脸检测 -->
+	<ImageSacle>0.2</ImageSacle>
+	
+	<!--寻优人脸保存时间长度，单位:ms-->
+    <FaceOptTimeLength>3000</FaceOptTimeLength>
+    <!--进行检测的帧间隔，=1 每帧检测，>1 跳帧检测-->
+    <DetFrmInterval>2</DetFrmInterval>
+    <!--检测最大帧间隔，当连续时间内无人脸，为CPU消耗，降低检测频率，用最大帧间隔代替普通帧间隔-->
+    <MaxDetInterval>4</MaxDetInterval>
+    <!--质量评估相对于检测的帧倍数，代表每多少次检测才进行一次质量评估，即质量评估帧间隔为：nDetFrmInterval*nEvalFrmFactor，质量评估耗时，不是所有检测都进行评估     -->
+    <EvalFrmFactor>1</EvalFrmFactor>
+    <!--人脸质量阈值，低于此阈值的人脸不参与寻优-->
+    <FaceQualityLimit>0.1</FaceQualityLimit>
+    <!--关键点置信度阈值，低于此阈值不参与寻优，置信度高时角度估计才准确，一般人脸转角较大是会导致置信度低-->
+    <FaceKptCfdLimit>0.4</FaceKptCfdLimit>
+    <!--人脸X轴旋转角度阈值（人脸俯仰角，抬头低头），超过此角度的不参与寻优-->
+    <FaceAngleXLimit>30.0</FaceAngleXLimit>
+    <!--人脸Y轴旋转角度阈值（人脸左右转角，头顶不动转头），超过此角度的不参与寻优-->
+    <FaceAngleYLimit>30.0</FaceAngleYLimit>
+    <!--人脸Z轴旋转角度阈值（人脸水平偏转角，头往肩部下压），超过此角度的不参与寻优-->
+    <FaceAngleZLimit>30.0</FaceAngleZLimit>
+	<!--人脸识别阈值-->
+	<RecogThreshold>0.70</RecogThreshold>
+	
+	<!--质量控制需要保存的最大帧数  <=100 -->
+	<QualityFaceNum>10</QualityFaceNum>
+	
+	<!--人脸帧过期时间间隔，超过此时间不再作为质量评估候选帧，单位:秒-->
+	<DetExpireTime>3</DetExpireTime>
+	
+	<!--0表示使用精伦免驱动版读卡器   1表示精伦带驱动版读卡器    2表示蓝天读卡器-->
+	<IDCardReaderType>1</IDCardReaderType>
+	
+	<!-- 每隔多少帧保存一次图像 -->
+	<SaveFrame>4500</SaveFrame>
+	<!-- 是否保存每次刷身份证后的图像 1 保存，0，不保存-->
+	<SaveWholePic>1</SaveWholePic>
+	
+	<!--配置需要保存视频的时间 单位：s    0表示不保存视频，数据表示刷卡前后各多少时间-->
+	<VideoTimeSaved>3</VideoTimeSaved>
+	<FemaleScore>0.01</FemaleScore>
+	
+	<!--是否开启年龄性别识别 0不开启，1开启 默认为1-->
+	<AgeGenderFlag>1</AgeGenderFlag>
+		<!--年龄性别阈值判断上限-->
+	<AgeGenderThreshold>0.99</AgeGenderThreshold>
+	<!--年龄跨度 默认为±15岁-->
+	<AgeSpan>15</AgeSpan>
+	<!--年龄错误时的分数-->
+	<AgeScore>0.65</AgeScore>
+	<!--性别错误时的分数-->
+	<GenderScore>0.45</GenderScore>
+
+	<!--VideoType：摄像头类型。AVI,HIK_FILE,HIK,YIXIN,USB,RTSP,SVAC -->
+    <!--IpAddress：摄像头地址，网络摄像头建议使用分辨率1280*720，人脸检测图片缩放设为0.3；USB摄像头默认使用分辨率640*480，地址设为0-->
+    <!--Port：摄像头端口或者索引，海康网络摄像头端口一般为8000；USB摄像头索引从0开始，一般默认为0-->
+    <!--UsbFrame：摄像头帧率，仅对USB摄像头进行设置，默认为15；网络摄像头：UserName用户名为admin，UserPwd密码为admin123；-->
+    <VideoType>USB</VideoType>
+    <VideoIpAddress>0</VideoIpAddress>
+    <VideoPort0>0</VideoPort0>
+    <VideoPort1>1</VideoPort1>
+    <VideoFrame>15</VideoFrame>
+    <VideoName>admin</VideoName>
+	<VideoPwd>admin12345</VideoPwd>
+		
+	<RecogLocationID>20</RecogLocationID>
+	
+  </FaceAnalysis>
+  
+  <!--身份证信息来源：0 身份证读卡器；1 网络调用-->
+  <IdCard>
+	<IdCardSrc>0</IdCardSrc>
+	<FaceServerIp>127.0.0.1</FaceServerIp>
+	<FaceServerPort>666</FaceServerPort>
+  </IdCard>
+  
+  <!--1:1人脸比对后接1：N识别信息：1NNeed：0，后续不做1：N；1，后续做1：N，1NServerIp 为1：N服务器IP-->
+  <Info1N>
+	<Need1N>1</Need1N>
+	<ServerIp1N>127.0.0.1</ServerIp1N>
+	<ServerPort1N>6666</ServerPort1N>
+  </Info1N>
+  
+  <LocalDataBase>
+	<Server>127.0.0.1</Server>
+	<Database>facerecognition_db</Database>
+	<UserId>root</UserId>
+	<Password>123456</Password>
+	<DataBasePort>3306</DataBasePort>
+	<Charset>gbk</Charset>
+  </LocalDataBase>
+
+  <!-- 界面参数 -->
+  <Interface>
+	<!-- 鼠标单击事件 -->
+	<MouseEvent>1</MouseEvent>
+	<!--主副屏幕是否切换 0不切换 1切换-->
+	<ScreenToggle>0</ScreenToggle>
+	<!--主屏幕是否最小化 0不 1最小化-->
+	<MainISMin>0</MainISMin>
+	<!--是否清除界面信息  0 不清除  1清除一次 -->
+	<ClearInterFace>0</ClearInterFace>
+  </Interface>
+  
+   <!--机器设备参数配置-->
+  <Device>
+  	<!--存储图片文件夹(images)磁盘占用空间限制，单位GB-->
+    	<DirectoryImageLimitSize>10</DirectoryImageLimitSize>
+	<!--存储视频文件夹(videos)磁盘占用空间限制，单位GB-->
+	<DirectoryVideoLimitSize>15</DirectoryVideoLimitSize>
+	<!-- 每个XXXX时间检测一次磁盘是否已满 单位为S-->
+	<DeviceTimeSpan>720</DeviceTimeSpan>
+  </Device>
+  
+  
+  
+</Message>

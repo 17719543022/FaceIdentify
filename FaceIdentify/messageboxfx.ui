@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageBoxFX</class>
+ <widget class="QDialog" name="MessageBoxFX">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>317</width>
+    <height>332</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/RenZhengBiDui/fangxingBG.png);</string>
+  </property>
+  <widget class="QFrame" name="radiusFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>317</width>
+     <height>332</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0;
+image: 0;
+border-radius:10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="noPushButton">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>271</y>
+      <width>124</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/QuXiao.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/QuXiaoDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/QuXiao.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="yesPushButton">
+    <property name="geometry">
+     <rect>
+      <x>167</x>
+      <y>271</y>
+      <width>124</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/QueDing.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/QueDingDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/QueDing.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closePushButton">
+    <property name="geometry">
+     <rect>
+      <x>281</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/DengLu/GuanBi.png);}
+QPushButton:hover{background-image: url(:/Images/DengLu/GuanBi.png);}
+QPushButton:pressed{background-image: url(:/Images/DengLu/GuanBi.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letGoIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>48</x>
+      <y>247</y>
+      <width>27</width>
+      <height>24</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: 0;
+background-image: url(:/Images/RenZhengBiDui/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="zhaoLabel">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>42</y>
+      <width>265</width>
+      <height>198</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background: 0;
+border-radius: 0;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letGoTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>85</x>
+      <y>243</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认人工复核放行该旅客？</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

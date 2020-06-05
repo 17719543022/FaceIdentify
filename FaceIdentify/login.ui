@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LogIn</class>
+ <widget class="QDialog" name="LogIn">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>425</width>
+    <height>319</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/DengLu/DengLuBG.png);</string>
+  </property>
+  <widget class="QFrame" name="radiusFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>425</width>
+     <height>319</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0;
+image: 0;
+border-radius:10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="zhangHaoWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>110</y>
+      <width>247</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+image: url(:/Images/DengLu/YuanJiaoJuXing.png);
+background: 0;</string>
+    </property>
+    <widget class="QLabel" name="zhangHaoLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>10</y>
+       <width>43</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;
+image: url(:/Images/DengLu/ZhangHao.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="zhangHaoLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>0</y>
+       <width>167</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+image: 0;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="miMaWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>89</x>
+      <y>160</y>
+      <width>247</width>
+      <height>34</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+image: url(:/Images/DengLu/YuanJiaoJuXing.png);
+background: 0;</string>
+    </property>
+    <widget class="QLabel" name="miMaLabel">
+     <property name="geometry">
+      <rect>
+       <x>15</x>
+       <y>10</y>
+       <width>42</width>
+       <height>15</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;
+image: url(:/Images/DengLu/MiMa.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="miMaLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>65</x>
+       <y>0</y>
+       <width>167</width>
+       <height>34</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: transparent;
+image: 0;
+color: rgb(255, 255, 255);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="dengLuPushButton">
+    <property name="geometry">
+     <rect>
+      <x>132</x>
+      <y>230</y>
+      <width>160</width>
+      <height>58</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/DengLu/DengLu.png);}
+QPushButton:hover{background-image: url(:/Images/DengLu/DengLuDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/DengLu/DengLu.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="guanBiPushButton">
+    <property name="geometry">
+     <rect>
+      <x>374</x>
+      <y>30</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+image: 0;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="images.qrc">
+      <normaloff>:/Images/DengLu/GuanBi.png</normaloff>:/Images/DengLu/GuanBi.png</iconset>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

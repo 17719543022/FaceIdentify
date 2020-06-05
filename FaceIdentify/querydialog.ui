@@ -1,0 +1,724 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>QueryDialog</class>
+ <widget class="QDialog" name="QueryDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>501</width>
+    <height>375</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/HuiCha/TanChuangBG.png);</string>
+  </property>
+  <widget class="QFrame" name="radiusFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>501</width>
+     <height>375</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0;
+image: 0;
+border-radius:10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QWidget" name="headerWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>501</width>
+      <height>65</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+border-radius: 0;</string>
+    </property>
+    <widget class="QLabel" name="cardCodeLabel">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>27</y>
+       <width>81</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>14</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>证件号码</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="cardCodeLineEdit">
+     <property name="geometry">
+      <rect>
+       <x>138</x>
+       <y>27</y>
+       <width>211</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color: rgb(255, 255, 255);
+border: 0;
+image: 0;
+background: 0;
+background-color: rgb(11, 52, 74);
+border-radius: 0;</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="queryPushButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>17</y>
+       <width>96</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/HuiCha/ChaXun.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/ChaXunDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/ChaXun.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="closePushButton">
+     <property name="geometry">
+      <rect>
+       <x>450</x>
+       <y>30</y>
+       <width>20</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/HuiCha/GuanBi.png</normaloff>:/Images/HuiCha/GuanBi.png</iconset>
+     </property>
+    </widget>
+    <widget class="QLabel" name="splitLabel_1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>58</y>
+       <width>422</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: 0;
+background: 0;
+border-radius: 0;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(0, 198, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="bodyWidget_1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>65</y>
+      <width>501</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: 0;
+background: 0;
+border-radius: 0;</string>
+    </property>
+    <widget class="QLabel" name="splitLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>73</y>
+       <width>422</width>
+       <height>1</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: 0;
+background: 0;
+border-radius: 0;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(0, 198, 255);
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>-3</y>
+       <width>68</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>个人信息</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalLabel_1">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>25</y>
+       <width>231</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>姓名：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>47</y>
+       <width>231</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>证件号码：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalLabel_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>25</y>
+       <width>201</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>航班号：</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="personalLabel_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>47</y>
+       <width>231</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>序列号：</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="baoJingPushButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>231</y>
+       <width>126</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{image:0; border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/BaoJing.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/BaoJingDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/BaoJing.png);}
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="fangXingPushButton">
+     <property name="geometry">
+      <rect>
+       <x>350</x>
+       <y>175</y>
+       <width>126</width>
+       <height>55</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QPushButton{image:0; border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/RenGongFuHeFangXing.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/RenGongFuHeFangXingDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/RenGongFuHeFangXing.png);}</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="portraitLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>105</y>
+       <width>118</width>
+       <height>146</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-image: url(:/Images/HuiCha/ZhaoPian.png);
+image: 0;
+border-radius: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QLabel" name="resultLabel">
+     <property name="geometry">
+      <rect>
+       <x>40</x>
+       <y>77</y>
+       <width>101</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>全流程记录</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="resultLabel_1">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>255</y>
+       <width>158</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>人证验证</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QLabel" name="resultLabel_2">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>275</y>
+       <width>158</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>9</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+border: 0;
+color: rgb(0, 198, 255);
+image: 0;</string>
+     </property>
+     <property name="text">
+      <string>通道1 13:12:12</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="bodyWidget_2" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>65</y>
+      <width>501</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: 0;
+background: 0;
+border-radius: 0;</string>
+    </property>
+    <widget class="QWidget" name="childWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>25</y>
+       <width>143</width>
+       <height>226</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: 0;
+background: 0;
+border-radius: 0;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(51, 110, 135);
+</string>
+     </property>
+     <widget class="QLabel" name="flightPicLabel">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>25</y>
+        <width>93</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+border: 0;
+background-color: rgb(13, 29, 42);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightTextLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>165</y>
+        <width>143</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(2, 255, 157);</string>
+      </property>
+      <property name="text">
+       <string>航班号/序列号</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightNoLabel">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>195</y>
+        <width>143</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>CE01923/098</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="childWidget_1" native="true">
+     <property name="geometry">
+      <rect>
+       <x>179</x>
+       <y>25</y>
+       <width>143</width>
+       <height>226</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: 0;
+background: 0;
+border-radius: 0;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(51, 110, 135);
+</string>
+     </property>
+     <widget class="QLabel" name="flightPicLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>25</y>
+        <width>93</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+border: 0;
+background-color: rgb(13, 29, 42);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightTextLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>165</y>
+        <width>143</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(2, 255, 157);</string>
+      </property>
+      <property name="text">
+       <string>航班号/序列号</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightNoLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>195</y>
+        <width>143</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>CE01923/098</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="childWidget_2" native="true">
+     <property name="geometry">
+      <rect>
+       <x>328</x>
+       <y>25</y>
+       <width>143</width>
+       <height>226</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: 0;
+background: 0;
+border-radius: 0;
+border-width: 1px;
+border-style: solid;
+border-color: rgb(51, 110, 135);
+</string>
+     </property>
+     <widget class="QLabel" name="flightPicLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>25</x>
+        <y>25</y>
+        <width>93</width>
+        <height>127</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+border: 0;
+background-color: rgb(13, 29, 42);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightTextLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>165</y>
+        <width>143</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(2, 255, 157);</string>
+      </property>
+      <property name="text">
+       <string>航班号/序列号</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="flightNoLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>195</y>
+        <width>143</width>
+        <height>17</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>CE01923/098</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="bodyWidget_3" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>65</y>
+      <width>501</width>
+      <height>310</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: 0;
+background: 0;
+border-radius: 0;</string>
+    </property>
+    <widget class="QTableWidget" name="flightTableWidget">
+     <property name="geometry">
+      <rect>
+       <x>27</x>
+       <y>25</y>
+       <width>447</width>
+       <height>226</height>
+      </rect>
+     </property>
+     <property name="rowCount">
+      <number>0</number>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>

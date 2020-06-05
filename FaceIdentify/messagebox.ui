@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MessageBox</class>
+ <widget class="QDialog" name="MessageBox">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>374</width>
+    <height>203</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/HuiCha/QueRenChuangBG.png);</string>
+  </property>
+  <widget class="QFrame" name="radiusFrame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>374</width>
+     <height>203</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">border: 0;
+image: 0;
+border-radius:10px;</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="yesPushButton">
+    <property name="geometry">
+     <rect>
+      <x>225</x>
+      <y>142</y>
+      <width>124</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/QueDing.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/QueDingDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/QueDing.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="noPushButton">
+    <property name="geometry">
+     <rect>
+      <x>26</x>
+      <y>142</y>
+      <width>124</width>
+      <height>47</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/HuiCha/QuXiao.png);}
+QPushButton:hover{background-image: url(:/Images/HuiCha/QuXiaoDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/HuiCha/QuXiao.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="closePushButton">
+    <property name="geometry">
+     <rect>
+      <x>333</x>
+      <y>20</y>
+      <width>16</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{background:0;border:0;}
+QPushButton{background-image: url(:/Images/DengLu/GuanBi.png);}
+QPushButton:hover{background-image: url(:/Images/DengLu/GuanBi.png);}
+QPushButton:pressed{background-image: url(:/Images/DengLu/GuanBi.png);}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="softwareIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="softwareTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>检测软件返回错误！</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="closeSysIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="closeSysTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确定关闭此系统？</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letGoIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letGoTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认人工复核放行该旅客？</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letStayIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="letStayTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认拦截该旅客？</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logInIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="logInTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>账户或密码不正确！</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cheHuiTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认撤回此次上传特征?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="cheHuiIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hitNullIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="hitNullTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>未查询到匹配人员!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="closeDivIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="closeDivTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认提前关闭人像采集功能?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="openDivIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="openDivTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>确认开启人像采集功能?</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="portErrorTextLabel">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>110</y>
+      <width>374</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>非备降乘客不在此采集人脸!</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="portErrorIconLabel">
+    <property name="geometry">
+     <rect>
+      <x>147</x>
+      <y>40</y>
+      <width>80</width>
+      <height>72</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border: 0;
+background: 0;
+background-image: url(:/Images/HuiCha/MaunalCheckWarm.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

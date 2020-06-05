@@ -1,0 +1,2042 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>13</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-image: url(:/Images/RenZhengBiDui/logoBG.png);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="minimumSize">
+    <size>
+     <width>800</width>
+     <height>600</height>
+    </size>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <widget class="QWidget" name="frontPageWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: 0;
+background: 0;</string>
+    </property>
+    <widget class="QWidget" name="displayWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>432</x>
+       <y>76</y>
+       <width>353</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/RenZhengBiDui/RenZhengBiDuiBianKuang.png);
+background: 0;</string>
+     </property>
+     <widget class="QLabel" name="compareLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>360</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: 0;
+background: 0;
+color: rgb(2, 255, 157);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>比对分数：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="expireTimeLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>330</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0;
+</string>
+      </property>
+      <property name="text">
+       <string>有效期限：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fangXingPushButton">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>393</y>
+        <width>157</width>
+        <height>66</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/RenZhengBiDui/FangXing.png);}
+QPushButton:hover{background-image: url(:/Images/RenZhengBiDui/FangXingDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/RenZhengBiDui/FangXing.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>157</width>
+        <height>66</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="idCardLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>300</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0;
+</string>
+      </property>
+      <property name="text">
+       <string>身份证号：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nameLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>240</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0;
+</string>
+      </property>
+      <property name="text">
+       <string>姓名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="nationalityLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>270</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0;
+</string>
+      </property>
+      <property name="text">
+       <string>民族：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="stampLabel">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>327</y>
+        <width>138</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="xianChangLabel">
+      <property name="geometry">
+       <rect>
+        <x>204</x>
+        <y>205</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+image: url(:/Images/RenZhengBiDui/XianChangZhao.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zhaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>20</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+image: url(:/Images/RenZhengBiDui/ZhaoPian.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zhengJianLabel">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>205</y>
+        <width>108</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+image: url(:/Images/RenZhengBiDui/ZhengJianZhao.png);
+background: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="zhengLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>20</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: url(:/Images/RenZhengBiDui/ZhaoPian.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="fdisplayWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>432</x>
+       <y>76</y>
+       <width>353</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/RenZhengBiDui/RenZhengBiDuiBianKuang.png);
+background: 0;</string>
+     </property>
+     <widget class="QPushButton" name="fceHuiPushButton">
+      <property name="geometry">
+       <rect>
+        <x>206</x>
+        <y>11</y>
+        <width>104</width>
+        <height>42</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/DengJiPai/withdraw_c.png);}
+QPushButton:hover{background-image: url(:/Images/DengJiPai/withdraw.png);}
+QPushButton:pressed{background-image: url(:/Images/DengJiPai/withdraw_c.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fzhaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>53</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+image: 0;
+background: 0;
+background-image: url(:/Images/RenZhengBiDui/ZhaoPian.png);
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fstampLabel">
+      <property name="geometry">
+       <rect>
+        <x>108</x>
+        <y>251</y>
+        <width>138</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fstatuslabel">
+      <property name="geometry">
+       <rect>
+        <x>117</x>
+        <y>300</y>
+        <width>120</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fhangBanHaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>83</y>
+        <width>163</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>序号：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fxuLieHaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>113</y>
+        <width>163</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>航班号：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="fletpassPushButton">
+      <property name="geometry">
+       <rect>
+        <x>193</x>
+        <y>398</y>
+        <width>130</width>
+        <height>57</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/DengJiPai/letpass_c.png);}
+QPushButton:hover{background-image: url(:/Images/DengJiPai/letpass.png);}
+QPushButton:pressed{background-image: url(:/Images/DengJiPai/letpass_c.png);}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fqiFeiShiJianLabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>143</y>
+        <width>163</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>日期：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="freshotPushButton">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>398</y>
+        <width>130</width>
+        <height>57</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/DengJiPai/reshot.png);}
+QPushButton:hover{background-image: url(:/Images/DengJiPai/reshot_d.png);}
+QPushButton:pressed{background-image: url(:/Images/DengJiPai/reshot.png);}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="fzuoWeiHaolabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>173</y>
+        <width>163</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>座位：</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="liShiWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>393</y>
+       <width>409</width>
+       <height>146</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/RenZhengBiDui/LiShiJiLuBianKuang.png);
+background: 0;</string>
+     </property>
+     <widget class="QTableWidget" name="liShiTableWidget">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>10</y>
+        <width>399</width>
+        <height>128</height>
+       </rect>
+      </property>
+      <property name="columnCount">
+       <number>5</number>
+      </property>
+      <column>
+       <property name="text">
+        <string>姓名</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>比对时间</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>比对分值</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>通行结果</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>有效期</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>9</pointsize>
+        </font>
+       </property>
+      </column>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="meiTouLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>68</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/RenZhengBiDui/MeiTou.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="settingPushButton">
+     <property name="geometry">
+      <rect>
+       <x>660</x>
+       <y>36</y>
+       <width>68</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/AnNiu/SheZhi.png</normaloff>:/Images/AnNiu/SheZhi.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>68</width>
+       <height>21</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QWidget" name="videoWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>76</y>
+       <width>406</width>
+       <height>309</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/RenZhengBiDui/ShiPinBianKuang.png);
+background: 0;</string>
+     </property>
+     <widget class="QLabel" name="video1Label">
+      <property name="geometry">
+       <rect>
+        <x>8</x>
+        <y>8</y>
+        <width>393</width>
+        <height>293</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="video2PushButton">
+      <property name="geometry">
+       <rect>
+        <x>284</x>
+        <y>215</y>
+        <width>109</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="guanBiPushButton">
+     <property name="geometry">
+      <rect>
+       <x>760</x>
+       <y>36</y>
+       <width>20</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/AnNiu/GuanBiXiTongXiao.png</normaloff>:/Images/AnNiu/GuanBiXiTongXiao.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>20</width>
+       <height>20</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="huiChaPushButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>36</y>
+       <width>91</width>
+       <height>19</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/AnNiu/RenYuanHuiCha.png</normaloff>:/Images/AnNiu/RenYuanHuiCha.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>91</width>
+       <height>19</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="beiJiangPushButton">
+     <property name="geometry">
+      <rect>
+       <x>134</x>
+       <y>36</y>
+       <width>91</width>
+       <height>18</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/AnNiu/BeiJiangCaiJi.png</normaloff>:/Images/AnNiu/BeiJiangCaiJi.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>91</width>
+       <height>18</height>
+      </size>
+     </property>
+    </widget>
+    <widget class="QLabel" name="downcount">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>36</y>
+       <width>68</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <pointsize>13</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;
+color: rgb(255, 255, 255);
+image: 0</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="backPageWidget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>800</width>
+      <height>600</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">image: 0;
+background: 0;</string>
+    </property>
+    <widget class="QWidget" name="bdisplayWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>432</x>
+       <y>76</y>
+       <width>353</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/LiShiJiLu/RenZhengBiDuiBianKuang.png);</string>
+     </property>
+     <widget class="QLabel" name="bcompareLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>360</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(2, 255, 157);</string>
+      </property>
+      <property name="text">
+       <string>比对分数：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bexpireTimeLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>330</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>有效期限：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bidCardLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>300</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>身份证号：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bnameLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>240</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>姓名：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bnationalityLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>270</y>
+        <width>331</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>民族：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bqieHuanPushButton">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>396</y>
+        <width>166</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{background:0; border:0;}
+QPushButton{border-image: url(:/Images/LiShiJiLu/QieHuanDaoDengJiPaiJiLu.png);}
+QPushButton:hover{border-image: url(:/Images/LiShiJiLu/QieHuanDaoDengJiPaiJiLuDianJiHou.png);}
+QPushButton:pressed{border-image: url(:/Images/LiShiJiLu/QieHuanDaoDengJiPaiJiLu.png);}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bstampLabel">
+      <property name="geometry">
+       <rect>
+        <x>215</x>
+        <y>327</y>
+        <width>138</width>
+        <height>138</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bxianChangLabel">
+      <property name="geometry">
+       <rect>
+        <x>204</x>
+        <y>205</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+image: url(:/Images/RenZhengBiDui/XianChangZhao.png);
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bzhaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>185</x>
+        <y>20</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+image: url(:/Images/RenZhengBiDui/ZhaoPian.png);
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bzhengJianLabel">
+      <property name="geometry">
+       <rect>
+        <x>41</x>
+        <y>205</y>
+        <width>108</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+image: url(:/Images/RenZhengBiDui/ZhengJianZhao.png);
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bzhengLabel">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>20</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+image: url(:/Images/RenZhengBiDui/ZhaoPian.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="bfdisplayWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>432</x>
+       <y>76</y>
+       <width>353</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">image: url(:/Images/RenZhengBiDui/RenZhengBiDuiBianKuang.png);
+background: 0;</string>
+     </property>
+     <widget class="QLabel" name="bfchuFaDiLabel">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>360</y>
+        <width>261</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>出发地：</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="bfqieHuanPushButton">
+      <property name="geometry">
+       <rect>
+        <x>93</x>
+        <y>396</y>
+        <width>166</width>
+        <height>60</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{image: 0; border: 0;}
+QPushButton{background-image: url(:/Images/DengJiPai/QieHuanDaoRenZhengJiLu.png);}
+QPushButton:hover{background-image: url(:/Images/DengJiPai/QieHuanDaoRenZhengJiLuDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/DengJiPai/QieHuanDaoRenZhengJiLu.png);}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfxianChangLabel">
+      <property name="geometry">
+       <rect>
+        <x>122</x>
+        <y>20</y>
+        <width>109</width>
+        <height>29</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+image: url(:/Images/RenZhengBiDui/XianChangZhao.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfzhaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>103</x>
+        <y>53</y>
+        <width>146</width>
+        <height>180</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+image: url(:/Images/RenZhengBiDui/ZhaoPian.png);</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfhangBanHaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>240</y>
+        <width>261</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>航班号：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfqiFeiShiJianLabel">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>300</y>
+        <width>261</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>起飞时间：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfxuLieHaoLabel">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>270</y>
+        <width>261</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>序列号：</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bfzuoWeiHaolabel">
+      <property name="geometry">
+       <rect>
+        <x>86</x>
+        <y>330</y>
+        <width>261</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;
+color: rgb(0, 241, 253);</string>
+      </property>
+      <property name="text">
+       <string>座位号：</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="bfoperateWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>76</y>
+       <width>406</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+image: url(:/Images/LiShiJiLu/ShuJuBianKuang.png);
+</string>
+     </property>
+     <widget class="QPushButton" name="bfchaXunPushButton">
+      <property name="geometry">
+       <rect>
+        <x>291</x>
+        <y>66</y>
+        <width>106</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{border:0; image:0;}
+QPushButton{background-image: url(:/Images/LiShiJiLu/ChaXun.png);}
+QPushButton:hover{background-image: url(:/Images/LiShiJiLu/ChaXunDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/LiShiJiLu/ChaXun.png);}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bfcontrolWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>114</y>
+        <width>395</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+background-color: rgb(17, 81, 108);
+image: 0;</string>
+      </property>
+      <widget class="QLabel" name="bfpageLabel">
+       <property name="geometry">
+        <rect>
+         <x>62</x>
+         <y>2</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::LeftToRight</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>当前第1页，共1页</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bfpgEndPushButton">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>5</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgEnd.png</normaloff>:/Images/LiShiJiLu/pgEnd.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bfpgFirstPushButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgFirst.png</normaloff>:/Images/LiShiJiLu/pgFirst.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bfpgNextPushButton">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>3</y>
+         <width>11</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgNext.png</normaloff>:/Images/LiShiJiLu/pgNext.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bfpgPrePushButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>3</y>
+         <width>11</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgPre.png</normaloff>:/Images/LiShiJiLu/pgPre.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="bfshuJuWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>139</y>
+        <width>406</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;</string>
+      </property>
+      <widget class="QTableWidget" name="bfshuJuTableWidget">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>1</y>
+         <width>399</width>
+         <height>316</height>
+        </rect>
+       </property>
+       <property name="columnCount">
+        <number>12</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>航班号</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>拍摄时间</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>序号</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>座位号</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>推送</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>来源</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+       <column/>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="bftiaoJianComboBox">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>46</y>
+        <width>190</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>全部</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>是</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>否</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="bftiaoJianLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>14</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bftiaoJianLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>74</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>航班号</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="bftiaoJianLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>44</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>已推送</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bftiaoJianLineEdit_1">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>16</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string>20180101</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bftiaoJianLineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>197</x>
+        <y>16</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string>21000101</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="bftiaoJianLineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>77</y>
+        <width>190</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QLabel" name="bmeitouLabel">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>800</width>
+       <height>68</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-image: url(:/Images/RenZhengBiDui/MeiTou.png);</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+    <widget class="QWidget" name="boperateWidget" native="true">
+     <property name="geometry">
+      <rect>
+       <x>14</x>
+       <y>76</y>
+       <width>406</width>
+       <height>465</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background: 0;
+image: url(:/Images/LiShiJiLu/ShuJuBianKuang.png);
+</string>
+     </property>
+     <widget class="QPushButton" name="bchaXunPushButton">
+      <property name="geometry">
+       <rect>
+        <x>291</x>
+        <y>66</y>
+        <width>106</width>
+        <height>48</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{border:0; image:0;}
+QPushButton{background-image: url(:/Images/LiShiJiLu/ChaXun.png);}
+QPushButton:hover{background-image: url(:/Images/LiShiJiLu/ChaXunDianJiHou.png);}
+QPushButton:pressed{background-image: url(:/Images/LiShiJiLu/ChaXun.png);}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QWidget" name="bcontrolWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>5</x>
+        <y>114</y>
+        <width>395</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+background-color: rgb(17, 81, 108);
+image: 0;</string>
+      </property>
+      <widget class="QLabel" name="bpageLabel">
+       <property name="geometry">
+        <rect>
+         <x>62</x>
+         <y>2</y>
+         <width>271</width>
+         <height>21</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);</string>
+       </property>
+       <property name="text">
+        <string>当前第1页，共1页</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bpgEndPushButton">
+       <property name="geometry">
+        <rect>
+         <x>370</x>
+         <y>5</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgEnd.png</normaloff>:/Images/LiShiJiLu/pgEnd.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bpgFirstPushButton">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>5</y>
+         <width>15</width>
+         <height>15</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgFirst.png</normaloff>:/Images/LiShiJiLu/pgFirst.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bpgNextPushButton">
+       <property name="geometry">
+        <rect>
+         <x>340</x>
+         <y>3</y>
+         <width>11</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgNext.png</normaloff>:/Images/LiShiJiLu/pgNext.png</iconset>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bpgPrePushButton">
+       <property name="geometry">
+        <rect>
+         <x>40</x>
+         <y>3</y>
+         <width>11</width>
+         <height>19</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset resource="images.qrc">
+         <normaloff>:/Images/LiShiJiLu/pgPre.png</normaloff>:/Images/LiShiJiLu/pgPre.png</iconset>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QWidget" name="bshuJuWidget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>2</x>
+        <y>139</y>
+        <width>406</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">image: 0;</string>
+      </property>
+      <widget class="QTableWidget" name="bshuJuTableWidget">
+       <property name="geometry">
+        <rect>
+         <x>4</x>
+         <y>1</y>
+         <width>399</width>
+         <height>316</height>
+        </rect>
+       </property>
+       <property name="columnCount">
+        <number>5</number>
+       </property>
+       <column>
+        <property name="text">
+         <string>姓名</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>比对时间</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>比对分值</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>通行结果</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>有效期</string>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>9</pointsize>
+         </font>
+        </property>
+       </column>
+      </widget>
+     </widget>
+     <widget class="QComboBox" name="btiaoJianComboBox">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>46</y>
+        <width>190</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;
+</string>
+      </property>
+      <item>
+       <property name="text">
+        <string>全部</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>是</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>否</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="btiaoJianLabel_1">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>14</y>
+        <width>41</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>日期</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="btiaoJianLabel_2">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>44</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>通行结果</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="btiaoJianLabel_3">
+      <property name="geometry">
+       <rect>
+        <x>22</x>
+        <y>74</y>
+        <width>71</width>
+        <height>30</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>13</pointsize>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+border: 0;
+color: rgb(255, 255, 255);
+image: 0;</string>
+      </property>
+      <property name="text">
+       <string>身份证号</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="btiaoJianLineEdit_1">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>16</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string>20180101</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="btiaoJianLineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>197</x>
+        <y>16</y>
+        <width>90</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+      <property name="text">
+       <string>21000101</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="btiaoJianLineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>97</x>
+        <y>77</y>
+        <width>190</width>
+        <height>25</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background: 0;
+color: rgb(255, 255, 255);
+background-color: rgb(11, 52, 74);
+image: 0;
+border: 0;</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QPushButton" name="bfanHuiButton">
+     <property name="geometry">
+      <rect>
+       <x>44</x>
+       <y>34</y>
+       <width>75</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border: 0;
+background: 0;</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="images.qrc">
+       <normaloff>:/Images/LiShiJiLu/FanHui.png</normaloff>:/Images/LiShiJiLu/FanHui.png</iconset>
+     </property>
+     <property name="iconSize">
+      <size>
+       <width>75</width>
+       <height>25</height>
+      </size>
+     </property>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="images.qrc"/>
+ </resources>
+ <connections/>
+</ui>
